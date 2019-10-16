@@ -1,0 +1,34 @@
+div.main__fullBlock.fullBlock.-blockPricing
+  div.fullBlock__innerBlock.innerBlock
+    section.innerBlock__mainSection.mainSection.-fullWidth
+      div.mainSection__headerBlock.headerBlock.-centered
+        h2.h2 Pricing Table
+        p Term sheet convertible note colluding bootstrapping.
+      div.mainSection__pricingBlock.pricingBlock
+        mixin pricingTable(name, price, className="-dark")
+          div(class="pricingBlock__pricingTable pricingTable -oneThird " + className)
+            div.pricingTable__header
+              h3.h3= name
+              p From&nbsp;
+                span.price= price
+                .
+                  &nbsp;per month
+            div.pricingTable__row
+              div.pricingTable__cell Total Users
+            div.pricingTable__row
+              div.pricingTable__cell Unlimited Styles
+            div.pricingTable__row
+              div.pricingTable__cell Advance Protection
+            div.pricingTable__row
+              div.pricingTable__cell Cloud Storage
+            div.pricingTable__row
+              div.pricingTable__cell 24/7 Customer Service
+            div.pricingTable__row
+              div.pricingTable__cell Backup Service
+            div.pricingTable__pricingTableFooter.pricingTableFooter
+              div.pricingTableFooter__pricing= price + ' Per Month'
+              a(href="#").pricingTableFooter__button.button
+                span Sign Up
+        +pricingTable('Basic', '$99')
+        +pricingTable('Premium', '$199', '-blue')
+        +pricingTable('Ultimate', '$299')

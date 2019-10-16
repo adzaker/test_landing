@@ -1,0 +1,21 @@
+div.main__fullBlock.fullBlock.-blockFeatures
+  div.fullBlock__innerBlock.innerBlock
+    section.innerBlock__mainSection.mainSection.-fullWidth
+      div.mainSection__headerBlock.headerBlock.-centered
+        h2.h2 LandX Features
+        p Term sheet convertible note colluding bootstrapping.
+      div.mainSection__featuresBlock.featuresBlock
+        mixin feature(number, header)
+          div.featuresBlock__feature.feature.-oneThird
+            div.feature__icon
+              img(src="images/features-"+number+".png")
+            div.feature__header
+              h4.h4= header
+            div.feature__text
+              p Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement.
+        +feature('1', 'Responsive Design')
+        +feature('2', '1000+ Font Icons')
+        +feature('3', 'Built with Bootstrap 3.1')
+        +feature('4', 'Lots of Variations')
+        +feature('5', 'Valid Markup')
+        +feature('6', 'Easy to Customize')

@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header__headerInner {
+  max-width: $page-width;
+  width: 100%;
+  margin: 3rem auto 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-mac) {
+    max-width: 100%;
+    padding: 0 2.5rem;
+  }
+}
+
+.headerInner__socials {
+  display: flex;
+  height: 1.5rem;
+
+  .socials__socialButton {
+    border-radius: 50%;
+    background: $white;
+    color: $gray-900;
+    transition: all .2s ease;
+    margin: 2px;
+
+    &:hover {
+      background: darken($gray-300, 20%);
+    }
+  }
+}

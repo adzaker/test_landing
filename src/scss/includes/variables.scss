@@ -1,0 +1,43 @@
+// Colors
+
+$white: #ffffff;
+$blue: #0199e6;
+$black: #000000;
+$gray-900: #323232;
+$gray-600: #727272;
+$gray-300: #f7f8fa;
+
+$colors: (
+'white': $white,
+'blue': $blue,
+'black': $black,
+'grayDark': $gray-900,
+'grayMedium': $gray-600,
+'grayLight': $gray-300,
+);
+
+$rem: 16px;
+
+//Breakpoints
+
+$page-width: 75rem;
+
+$breakpoint-fullHD: 120rem;
+$breakpoint-HD: 90rem;
+$breakpoint-mac: 80rem;
+$breakpoint-page: $page-width;
+$breakpoint-ipad-landscape: 64 * $rem - 1;
+$breakpoint-ipad-portrait: 48 * $rem - 1;
+$breakpoint-phone-landscape: 46 * $rem - 1;
+$breakpoint-phone-portrait: 30 * $rem - 1;
+
+$breakpoints: (
+  'fullhd': $breakpoint-fullHD,
+  'hd': $breakpoint-HD,
+  'mac': $breakpoint-mac,
+  'page': $breakpoint-page,
+  'ipad-l': $breakpoint-ipad-landscape,
+  'ipad-p': $breakpoint-ipad-portrait,
+  'phone-l': $breakpoint-phone-landscape,
+  'phone-p': $breakpoint-phone-portrait,
+)

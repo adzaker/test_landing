@@ -1,0 +1,24 @@
+div.main__fullBlock.fullBlock.-blockReviews
+  div.fullBlock__innerBlock.innerBlock
+    section.innerBlock__mainSection.mainSection.-fullWidth
+      div.mainSection__headerBlock.headerBlock.-centered
+        h2.h2 Trusted by Thousands
+        p Term sheet convertible note colluding bootstrapping.
+      div.mainSection__reviewsBlock.reviewsBlock
+        div.reviewsBlock__partnersContainer.partnersContainer
+          img(src="images/vogue.png")
+          img(src="images/Mashable.png")
+          img(src="images/TNV.png")
+          img(src="images/National-Geographic.png")
+        div.reviewsBlock__reviewsContainer.reviewsContainer
+          mixin review(text, name, source)
+            div.reviewsContainer__review.review.-oneThird
+              div.review__quotesBlock “
+              div.review__textBlock
+                span= text
+              div.review__bottomBlock
+                div.review__name= name
+                div.review__source= source
+          +review('Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding.', 'Willeke Hoekstra', 'AbZ Network')
+          +review('Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding.', 'Răducu Neamțu', 'AbZ Network')
+          +review('Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding.', 'Markel Díaz', 'AbZ Network')

@@ -1,0 +1,92 @@
+$fa-font-path: "/node_modules/@fortawesome/fontawesome-free/webfonts";
+$raleway-path: "/fonts/Raleway/Raleway-";
+$source-sans-path: "/fonts/Source_Sans/";
+
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$raleway-path}Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('#{$raleway-path}SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('#{$raleway-path}Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$raleway-path}Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{$raleway-path}Light.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('#{$source-sans-path}sourcesansprolight.woff2') format('woff2'), url('#{$source-sans-path}sourcesansprolight.woff') format('woff'), url('#{$source-sans-path}sourcesansprolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url('#{$source-sans-path}sourcesansprolightitalic.woff2') format('woff2'), url('#{$source-sans-path}sourcesansprolightitalic.woff') format('woff'), url('#{$source-sans-path}sourcesansprolightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('#{$source-sans-path}sourcesanspro.woff2') format('woff2'), url('#{$source-sans-path}sourcesanspro.woff') format('woff'), url('#{$source-sans-path}sourcesanspro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('#{$source-sans-path}sourcesansproitalic.woff2') format('woff2'), url('#{$source-sans-path}sourcesansproitalic.woff') format('woff'), url('#{$source-sans-path}sourcesansproitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('#{$source-sans-path}sourcesansprosemibold.woff2') format('woff2'), url('#{$source-sans-path}sourcesansprosemibold.woff') format('woff'), url('#{$source-sans-path}sourcesansprosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url('#{$source-sans-path}sourcesansprosemibolditalic.woff2') format('woff2'), url('#{$source-sans-path}sourcesansprosemibolditalic.woff') format('woff'), url('#{$source-sans-path}sourcesansprosemibolditalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('#{$source-sans-path}sourcesansprobold.woff2') format('woff2'), url('#{$source-sans-path}sourcesansprobold.woff') format('woff'), url('#{$source-sans-path}sourcesansprobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url('#{$source-sans-path}sourcesansprobolditalic.woff2') format('woff2'), url('#{$source-sans-path}sourcesansprobolditalic.woff') format('woff'), url('#{$source-sans-path}sourcesansprobolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}

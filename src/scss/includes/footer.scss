@@ -1,0 +1,39 @@
+.footer {
+  background: $gray-300;
+}
+
+.footer__fullBlock {
+  padding: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.fullBlock__logoContainer {
+  margin-bottom: .75rem;
+}
+
+.fullBlock__smallText {
+  font-size: 1rem;
+  color: lighten($gray-600, 20%);
+}
+
+.fullBlock__socials {
+  display: flex;
+  margin-top: 1rem;
+
+  .socials__socialButton {
+    color: $white;
+    background: lighten($gray-600, 20%);
+    border-radius: .25rem;
+    margin: .25rem;
+    transition: all .2s ease;
+
+    &:hover {
+      background: $gray-600;
+    }
+  }
+}

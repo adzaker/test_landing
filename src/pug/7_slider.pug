@@ -1,0 +1,22 @@
+div.main__fullBlock.fullBlock.-blockSlider
+  div.fullBlock__innerBlock.innerBlock
+    section.innerBlock__mainSection.mainSection.-fullWidth
+      div.mainSection__headerBlock.headerBlock.-centered
+        h2.h2 Product Screenshots
+        p Term sheet convertible note colluding bootstrapping.
+      div.mainSection__sliderBlock.sliderBlock
+        div.swiper-container
+          div.swiper-wrapper
+            - for (var i = 0; i < 3; i++) {
+            div.swiper-slide
+              img(src="images/slide-1.png")
+            div.swiper-slide
+              img(src="images/slide-2.png")
+            div.swiper-slide
+              img(src="images/slide-3.png")
+            - }
+        div.swiper-pagination
+        div.swiper-button-prev
+          i.fas.fa-chevron-left
+        div.swiper-button-next
+          i.fas.fa-chevron-right
