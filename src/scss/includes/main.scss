@@ -30,7 +30,7 @@ body {
   }
 
   &.-blockSolution {
-    background: url("/images/background.png");
+    background: url("./images/background.png");
     padding-top: 15rem;
     padding-bottom: 8rem;
     background-size: cover;
@@ -43,7 +43,7 @@ body {
   }
 
   &.-blockSolution2 {
-    background: url("/images/background-2.png");
+    background: url("./images/background-2.png");
     background-size: cover;
     background-position: center;
   }

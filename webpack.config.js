@@ -33,9 +33,16 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           use: [{
             loader: "css-loader",
+            options: {
+              sourceMap: true,
+              url: false,
+            }
           },
             {
               loader: "sass-loader",
+              options: {
+                sourceMap: true,
+              }
             }
           ]
         })
@@ -75,10 +82,6 @@ module.exports = {
       { from: './src/fonts',
         to: path.resolve(__dirname, 'dist/fonts')}
     ]),
-    new CopyWebpackPlugin([
-      { from: './src/video',
-        to: path.resolve(__dirname, 'dist/video')}
-    ]),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       bail: false, // Ignore errors on corrupted images
@@ -92,10 +95,7 @@ module.exports = {
         ]
       },
       filter: (source, sourcePath) => {
-        if (source.byteLength < 8192) {
-          return false;
-        }
-        return true;
+        return source.byteLength < 8192;
       }
     })
   ],

@@ -1,6 +1,6 @@
-$fa-font-path: "/node_modules/@fortawesome/fontawesome-free/webfonts";
-$raleway-path: "/fonts/Raleway/Raleway-";
-$source-sans-path: "/fonts/Source_Sans/";
+$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
+$raleway-path: "./fonts/Raleway/Raleway-";
+$source-sans-path: "./fonts/Source_Sans/";
 
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
