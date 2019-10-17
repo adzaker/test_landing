@@ -1,6 +1,7 @@
 # landx-page
 
 ### Commands to fire: 
-###`npm install`
-###`webpack`
-Then open "/dist/index.html"
+#### `npm install`
+#### `webpack`
+#### `cd dist`
+#### `start index.html`
