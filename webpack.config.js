@@ -82,6 +82,10 @@ module.exports = {
       { from: './src/fonts',
         to: path.resolve(__dirname, 'dist/fonts')}
     ]),
+    new CopyWebpackPlugin([
+      { from: './node_modules/fluid-player/dist/images/',
+        to: path.resolve(__dirname, 'dist/images')}
+    ]),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       bail: false, // Ignore errors on corrupted images
